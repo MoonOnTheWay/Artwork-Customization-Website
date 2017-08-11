@@ -12,4 +12,10 @@
 
 ![image text](https://github.com/MoonOnTheWay/Artwork-Customization-Website/blob/master/screenshots/Artist_Home.png)
 
-![image text](https://github.com/MoonOnTheWay/Artwork-Customization-Website/blob/master/screenshots/Ads.png)
+![image text](https://github.com/MoonOnTheWay/Artwork-Customization-Website/blob/master/screenshots/Editor_Login.png)
+
+![image text](https://github.com/MoonOnTheWay/Artwork-Customization-Website/blob/master/screenshots/Editor_Edit.png)
+
+![image text](https://github.com/MoonOnTheWay/Artwork-Customization-Website/blob/master/screenshots/Editor_Edit2.png)
+
+![image text](https://github.com/MoonOnTheWay/Artwork-Customization-Website/blob/master/screenshots/Editor_Edit3.png)
