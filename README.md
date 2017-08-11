@@ -5,5 +5,11 @@
 * Provided online artwork exhibition, transaction, customization, and auction services
 ### Website Screenshots
 ![image text](https://github.com/MoonOnTheWay/Artwork-Customization-Website/blob/master/screenshots/Home.png)
+
 ![image text](https://github.com/MoonOnTheWay/Artwork-Customization-Website/blob/master/screenshots/Home2.png)
+
 ![image text](https://github.com/MoonOnTheWay/Artwork-Customization-Website/blob/master/screenshots/Home3.png)
+
+![image text](https://github.com/MoonOnTheWay/Artwork-Customization-Website/blob/master/screenshots/Artist_Home.png)
+
+![image text](https://github.com/MoonOnTheWay/Artwork-Customization-Website/blob/master/screenshots/Ads.png)
