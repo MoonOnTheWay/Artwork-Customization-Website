@@ -1,0 +1,269 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>采编主页_添加新闻资讯</title>
+	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<link href="css/style.css" rel='stylesheet' type='text/css' />
+	
+		
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Blogname Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+	Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" 
+	/>
+	
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<!----webfonts---->
+		<link href='http://fonts.useso.com/css?family=Oswald:100,400,300,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.useso.com/css?family=Source+Sans+Pro:200,300,400,600,700,300italic,400italic,600italic' rel='stylesheet' type='text/css'>
+		<!----//webfonts---->
+		  <script src="http://ajax.useso.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<!--end slider -->
+				<!--script-->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<!--/script-->
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},900);
+				});
+			});
+</script>
+
+     
+<!---->
+</head>
+<body>
+<!---strat-banner---->
+
+<div class="banner2">				
+	 <div class="header">  
+		  <div class="container">
+			  <div class="logo" style="float:left">
+					<a href="home.html">后台管理系统</a>
+			 </div>
+
+			 <!---start-top-nav---->
+			     
+
+			 <div class="top-menu">
+				  <span class="menu"> </span> 
+				   <ul>
+						<li><a href="home.html">网站首页</a></li>
+						<li><a style="color:white" href="caibian.html">采编入口</a></li>
+						<li><a href="zhubian.html">主编入口</a></li>
+						<li><a href="guanliyuan.html">管理员入口</a></li>
+						
+
+						<div class="clearfix"> </div>
+
+				 </ul>
+			 </div>
+					<script>
+					$("span.menu").click(function(){
+					$(".top-menu ul").slideToggle("slow" , function(){
+					});
+					});
+					</script>
+				<!---//End-top-nav---->					
+		 </div>
+	 </div>
+	 <div class="container">
+		 <div class="banner-head">
+			 <h1>光影艺术品定制，艺术你的人生</h1>
+			 <h2>Make your life more artistic</h2>
+		 </div>	
+		 <div class="banner-links2" style="font-family: 造字工房雅圆（非商用）;">
+			 <ul>
+				 <li><a href="caibian_main.html">添加软文广告</a></li>
+				 <li><a href="caibian_main2.html">添加新闻资讯</a></li>
+
+				 <li class="active"><a href="caibian_main3.html">添加最新公告</a></li>
+				 <li><a href="caibian_main4.html">查看审核结果</a></li>
+				 <div class="clearfix"></div>
+			 </ul>
+		 </div>
+	 </div>
+</div>
+<!---//End-banner---->
+<script type="text/javascript" language="javascript">
+        function checkPic() {
+            var picPath = document.getElementById("picPath").value;
+            var type = picPath.substring(picPath.lastIndexOf(".") + 1, picPath.length).toLowerCase();
+            if (type != "jpg" && type != "bmp" && type != "gif" && type != "png") {
+                alert("请上传正确的图片格式");
+                return false;
+            }
+            return true;
+        }
+        //图片预览
+        function PreviewImage(divImage, upload, width, height) {
+            if (checkPic()) {
+                try {
+                    var imgPath;      //图片路径
+
+                    var Browser_Agent = navigator.userAgent;
+                    //判断浏览器的类型
+                    if (Browser_Agent.indexOf("Firefox") != -1) {
+                        //火狐浏览器
+
+//getAsDataURL在Firefox7.0 无法预览本地图片，这里需要修改
+                        imgPath = upload.files[0].getAsDataURL();
+                        document.getElementById(divImage).innerHTML = "<img id='imgPreview' src='" + imgPath + "' width='" + width + "' height='" + height + "'/>";
+                    } else {
+                        //IE浏览器 ie9 必须在兼容模式下才能显示预览图片
+                        var Preview = document.getElementById(divImage);
+                        Preview.filters.item("DXImageTransform.Microsoft.AlphaImageLoader").src = upload.value;
+                        Preview.style.width = width;
+                        Preview.style.height = height;
+                    }
+                } catch (e) {
+                    alert("请上传正确的图片格式");
+                }
+            }
+        }
+    </script>
+
+<div class="contact">
+	 <div class="container">
+		 <div class="contact-head">
+			  <form>
+			  	<h3>公告编辑</h3>
+				   <div class="contact-left" style="width:40%;float:left">
+				  	
+						<input type="text" placeholder="标题" required/>
+						<input type="text" placeholder="日期" required/>
+						<input type="text" placeholder="作者" required/>
+						
+   						 
+					
+				 </div>
+
+				 <div class="contact-right" style="width:55%;float:right">
+				 		<textarea style="height:200px" placeholder="Message"></textarea>
+						 <input type="submit" value="提交"/>
+				 </div>
+				 <div class="clearfix"></div>
+			 </form>
+		 </div>
+		 <div class="address">
+			 <h3>Our Locations</h3>
+			 <div class="col-md-6 locations">				 
+				  <ul>
+					 <li><span></span></li>					 					
+					 <li>
+						 <div class="address-info">	
+							 <h4>New York, Washington</h4>
+							 <p>10-765 MD-Road</p>
+							 <p>Washington, DC, United States,</p>
+							 <p>Phone: 123 456 7890</p>
+							 <p>Mail: <a href="mailto:info@example.com">info(at)example.com</a></p>
+							 <h5><a href="">Visit on Google Maps >></a></h5>	
+						 </div>
+					 </li>				
+				  </ul>	
+				  <ul>
+					 <li><span></span></li>					 					
+					 <li>
+						 <div class="address-info">	
+							 <h4>London, UK</h4>
+							 <p>10-765 MD-Road</p>
+							 <p>Lorem ipsum, domon sit, UK,</p>
+							 <p>Phone: 123 456 7890</p>
+							 <p>Mail: <a href="mailto:info@example.com">info(at)example.com</a></p>
+							 <h5><a href="">Visit on Google Maps >></a></h5>	
+						 </div>
+					 </li>				
+				  </ul>		
+			 </div>
+			 <div class="col-md-6 locations">				 
+				  <ul>
+					 <li><span></span></li>					 					
+					 <li>
+						 <div class="address-info">	
+							 <h4>Brazil, SouthAmerica</h4>
+							 <p>10-765 MD-Road</p>
+							 <p>Argentina,Filps Road</p>
+							 <p>Phone: 123 456 7890</p>
+							 <p>Mail: <a href="mailto:info@example.com">info(at)example.com</a></p>
+							 <h5><a href="">Visit on Google Maps >></a></h5>	
+						 </div>
+					 </li>				
+				  </ul>	
+				  <ul>
+					 <li><span></span></li>					 					
+					 <li>
+						 <div class="address-info">	
+							 <h4>San Francisco, California</h4>
+							 <p>10-765 MD-Road</p>
+							 <p>Lorem ipsum, domon sit, California,</p>
+							<p>Phone: 123 456 7890</p>
+							 <p>Mail: <a href="mailto:info@example.com">info(at)example.com</a></p>
+							 <h5><a href="">Visit on Google Maps >></a></h5>	
+						 </div>
+					 </li>				
+				  </ul>		
+			 </div>
+			 <div class="clearfix"></div>
+		 </div>
+	 </div>
+</div>
+<!--fotter-->
+<div class="fotter2">
+	 <div class="container">
+		<div class="fotter-list" style="width:33%;float:left;padding:1em">
+			 <h3>后台入口</h3>
+			 <ul>
+			 <li><a href="caibian.html">采编人员入口</a></li>
+			 <li><a href="#">主编入口</a></li>
+			 <li><a href="#">管理员入口</a></li>
+			 </ul>
+		 </div>
+		 <div class="fotter-list" style="width:38%;float:left;padding:1em">
+			 <h3>VESTIBULUM COMMO</h3>
+			 <ul>
+			 <li><a href="#">Ut alliquam solicitudin</a></li>
+			 <li><a href="#">Neque id cursus faucibus</a></li>
+			 <li><a href="#">Raesent dapibus neque id cursus</a></li>
+			 </ul>
+		 </div>
+		 <div class="fotter-media" style="width:29%;float:left;padding:1em">
+				<h3>FOLLOW US ON....</h3>
+				 <div class="social-icons">
+				 <a href="#"><span class="fb"> </span></a>
+				 <a href="#"><span class="twt"> </span></a>
+				 <a href="#"><span class="in"> </span></a>				 			 
+			    </div>
+		 </div>
+		 <div class="clearfix"></div>
+	 </div>
+</div>
+<!---fotter/-->
+<div class="copywrite">
+	 <div class="container">
+	 <p>Copyright &copy; 2015.Company name All rights reserved.More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p>
+</div>
+</div>
+<!---->
+<!---->
+<script type="text/javascript">
+		$(document).ready(function() {
+				/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+				*/
+		$().UItoTop({ easingType: 'easeOutQuart' });
+});
+</script>
+<a href="#to-top" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
+
+
+</body>
+</html>

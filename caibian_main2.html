@@ -1,0 +1,389 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>采编主页_添加广告</title>
+	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<link href="css/style.css" rel='stylesheet' type='text/css' />
+	
+		
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Blogname Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+	Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" 
+	/>
+	<link rel="stylesheet" href="./kindeditor-4.1.10/themes/default/default.css" />
+	<link rel="stylesheet" href="./kindeditor-4.1.10/plugins/code/prettify.css" />
+	<script charset="utf-8" src="./kindeditor-4.1.10/kindeditor.js"></script>
+	<script charset="utf-8" src="./kindeditor-4.1.10/lang/zh_CN.js"></script>
+	<script charset="utf-8" src="./kindeditor-4.1.10/plugins/code/prettify.js"></script>
+	<script language="JavaScript" src="js/mydate.js"></script>
+	<script>
+		KindEditor.ready(function(K) {
+			var editor1 = K.create('textarea[name="content1"]', {
+				cssPath : './kindeditor-4.1.10/plugins/code/prettify.css',
+				uploadJson : './kindeditor-4.1.10/jsp/upload_json.jsp',
+				fileManagerJson : './kindeditor-4.1.10/jsp/file_manager_json.jsp',
+				allowFileManager : true,
+				afterCreate : function() {
+					var self = this;
+					K.ctrl(document, 13, function() {
+						self.sync();
+						document.forms['example'].submit();
+					});
+					K.ctrl(self.edit.doc, 13, function() {
+						self.sync();
+						document.forms['example'].submit();
+					});
+				}
+			});
+			prettyPrint();
+		});
+	</script>
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<!----webfonts---->
+		<link href='http://fonts.useso.com/css?family=Oswald:100,400,300,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.useso.com/css?family=Source+Sans+Pro:200,300,400,600,700,300italic,400italic,600italic' rel='stylesheet' type='text/css'>
+		<!----//webfonts---->
+		  <script src="http://ajax.useso.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<!--end slider -->
+				<!--script-->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<!--/script-->
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},900);
+				});
+			});
+</script>
+<script type="text/javascript">
+//下面用于图片上传预览功能
+function setImagePreview(avalue) {
+var docObj=document.getElementById("doc");
+ 
+var imgObjPreview=document.getElementById("preview");
+if(docObj.files &&docObj.files[0])
+{
+//火狐下，直接设img属性
+imgObjPreview.style.display = 'block';
+imgObjPreview.style.width = '150px';
+imgObjPreview.style.height = '180px'; 
+//imgObjPreview.src = docObj.files[0].getAsDataURL();
+ 
+//火狐7以上版本不能用上面的getAsDataURL()方式获取，需要一下方式
+imgObjPreview.src = window.URL.createObjectURL(docObj.files[0]);
+}
+else
+{
+//IE下，使用滤镜
+docObj.select();
+var imgSrc = document.selection.createRange().text;
+var localImagId = document.getElementById("localImag");
+//必须设置初始大小
+localImagId.style.width = "150px";
+localImagId.style.height = "180px";
+//图片异常的捕捉，防止用户修改后缀来伪造图片
+try{
+localImagId.style.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale)";
+localImagId.filters.item("DXImageTransform.Microsoft.AlphaImageLoader").src = imgSrc;
+}
+catch(e)
+{
+alert("您上传的图片格式不正确，请重新选择!");
+return false;
+}
+imgObjPreview.style.display = 'none';
+document.selection.empty();
+}
+return true;
+}
+ 
+</script>
+     
+<!---->
+</head>
+<body>
+<!---strat-banner---->
+
+<div class="banner2">				
+	 <div class="header">  
+		  <div class="container">
+			  <div class="logo" style="float:left">
+					<a href="home.html">后台管理系统</a>
+			 </div>
+
+			 <!---start-top-nav---->
+			     
+
+			 <div class="top-menu">
+				  <span class="menu"> </span> 
+				   <ul>
+						<li><a href="home.html">网站首页</a></li>
+						<li><a style="color:white" href="caibian.html">采编入口</a></li>
+						<li><a href="zhubian.html">主编入口</a></li>
+						<li><a href="guanliyuan.html">管理员入口</a></li>
+						
+
+						<div class="clearfix"> </div>
+
+				 </ul>
+			 </div>
+					<script>
+					$("span.menu").click(function(){
+					$(".top-menu ul").slideToggle("slow" , function(){
+					});
+					});
+					</script>
+				<!---//End-top-nav---->					
+		 </div>
+	 </div>
+	 <div class="container">
+		 <div class="banner-head">
+			 <h1>光影艺术品定制，艺术你的人生</h1>
+			 <h2>Make your life more artistic</h2>
+		 </div>	
+		 <div class="banner-links2" style="font-family: 造字工房雅圆（非商用）;">
+			 <ul>
+				 <li><a href="caibian_main.html">添加软文</a></li>
+				 <li class="active"><a href="caibian_main2.html">添加广告</a></li>
+				 <li><a href="caibian_main4.html">查看审核结果</a></li>
+				 <div class="clearfix"></div>
+			 </ul>
+		 </div>
+	 </div>
+</div>
+<!---//End-banner---->
+
+<!---pop-up-box---->
+					  <script type="text/javascript" src="./js/modernizr.custom.min.js"></script>    
+					<link href="./css/popuo-box.css" rel="stylesheet" type="text/css" media="all"/>
+					<script src="./js/jquery.magnific-popup.js" type="text/javascript"></script>
+<!---//pop-up-box---->
+				<div id="small-dialog" class="mfp-hide">
+						<div class="signup">
+							<table id="table1">
+
+<tr>
+<th>标题</th>
+<th>价格</th>
+<th>日期</th>
+</tr>
+
+
+<tr>
+<td>*****</td>
+<td>*****</td>
+<td>*****</td>
+</tr>
+
+<tr>
+<td>*****</td>
+<td>*****</td>
+<td>*****</td>
+</tr>
+
+<tr>
+<td>*****</td>
+<td>*****</td>
+<td>*****</td>
+</tr>
+
+<tr>
+<td>*****</td>
+<td>*****</td>
+<td>*****</td>
+</tr>
+
+<tr>
+<td>*****</td>
+<td>*****</td>
+<td>*****</td>
+</tr>
+</table>
+						</div>
+					</div>
+
+					<script>
+						$(document).ready(function() {
+						$('.popup-with-zoom-anim').magnificPopup({
+							type: 'inline',
+							fixedContentPos: false,
+							fixedBgPos: true,
+							overflowY: 'auto',
+							closeBtnInside: true,
+							preloader: false,
+							midClick: true,
+							removalDelay: 300,
+							mainClass: 'my-mfp-zoom-in'
+						});
+																						
+						});
+				</script>
+<div class="contact">
+	 <div class="container">
+		 <div class="contact-head">
+			  <form>
+			  	<h3>广告编辑</h3>
+				   <div class="contact-left" style="width:30%;float:left">
+				  	
+						<input type="text" placeholder="标题" required/>
+						<select class="select_1">
+						<option>顶部轮播</option>
+						<option>底部轮播</option>
+						</select>
+
+				  
+						<input id="date" type="text" placeholder="设置上线时间"onfocus="MyCalendar.SetDate(this)" />
+						
+						<input id="date" type="text" placeholder="设置下线时间"onfocus="MyCalendar.SetDate(this)" />
+
+						<a class="play-icon popup-with-zoom-anim" href="#small-dialog" style="color:black;font-weight:bold">>>查看该时间段已选列表</a>
+
+						
+						<div style="height:1em"></div>
+						<input type="text" placeholder="价格" required/>
+						
+						<a href="javascript:;" class="file">选择文件
+						<input type="file" name="file" id="doc" onchange="javascript:setImagePreview();">
+						</a>
+
+						<div id="localImag">					
+					    <img  id="preview">
+						</div>
+
+						
+   						 
+					
+				 </div>
+
+				 <div class="contact-right" style="width:65%;float:right">
+				 		<textarea style="height:400px" placeholder="内容"></textarea>
+						<input style="float:right" type="submit" name="button" value="提交" />
+						<input style="float:left" type="submit" name="button" value="保存到草稿箱" />
+
+	
+				 </div>
+				 <div class="clearfix"></div>
+			 </form>
+		 </div>
+		 <div class="address">
+			 <h3>Our Locations</h3>
+			 <div class="col-md-6 locations">				 
+				  <ul>
+					 <li><span></span></li>					 					
+					 <li>
+						 <div class="address-info">	
+							 <h4>New York, Washington</h4>
+							 <p>10-765 MD-Road</p>
+							 <p>Washington, DC, United States,</p>
+							 <p>Phone: 123 456 7890</p>
+							 <p>Mail: <a href="mailto:info@example.com">info(at)example.com</a></p>
+							 <h5><a href="">Visit on Google Maps >></a></h5>	
+						 </div>
+					 </li>				
+				  </ul>	
+				  <ul>
+					 <li><span></span></li>					 					
+					 <li>
+						 <div class="address-info">	
+							 <h4>London, UK</h4>
+							 <p>10-765 MD-Road</p>
+							 <p>Lorem ipsum, domon sit, UK,</p>
+							 <p>Phone: 123 456 7890</p>
+							 <p>Mail: <a href="mailto:info@example.com">info(at)example.com</a></p>
+							 <h5><a href="">Visit on Google Maps >></a></h5>	
+						 </div>
+					 </li>				
+				  </ul>		
+			 </div>
+			 <div class="col-md-6 locations">				 
+				  <ul>
+					 <li><span></span></li>					 					
+					 <li>
+						 <div class="address-info">	
+							 <h4>Brazil, SouthAmerica</h4>
+							 <p>10-765 MD-Road</p>
+							 <p>Argentina,Filps Road</p>
+							 <p>Phone: 123 456 7890</p>
+							 <p>Mail: <a href="mailto:info@example.com">info(at)example.com</a></p>
+							 <h5><a href="">Visit on Google Maps >></a></h5>	
+						 </div>
+					 </li>				
+				  </ul>	
+				  <ul>
+					 <li><span></span></li>					 					
+					 <li>
+						 <div class="address-info">	
+							 <h4>San Francisco, California</h4>
+							 <p>10-765 MD-Road</p>
+							 <p>Lorem ipsum, domon sit, California,</p>
+							<p>Phone: 123 456 7890</p>
+							 <p>Mail: <a href="mailto:info@example.com">info(at)example.com</a></p>
+							 <h5><a href="">Visit on Google Maps >></a></h5>	
+						 </div>
+					 </li>				
+				  </ul>		
+			 </div>
+			 <div class="clearfix"></div>
+		 </div>
+	 </div>
+</div>
+<!--fotter-->
+<div class="fotter2">
+	 <div class="container">
+		<div class="fotter-list" style="width:33%;float:left;padding:1em">
+			 <h3>后台入口</h3>
+			 <ul>
+			 <li><a href="caibian.html">采编人员入口</a></li>
+			 <li><a href="#">主编入口</a></li>
+			 <li><a href="#">管理员入口</a></li>
+			 </ul>
+		 </div>
+		 <div class="fotter-list" style="width:38%;float:left;padding:1em">
+			 <h3>VESTIBULUM COMMO</h3>
+			 <ul>
+			 <li><a href="#">Ut alliquam solicitudin</a></li>
+			 <li><a href="#">Neque id cursus faucibus</a></li>
+			 <li><a href="#">Raesent dapibus neque id cursus</a></li>
+			 </ul>
+		 </div>
+		 <div class="fotter-media" style="width:29%;float:left;padding:1em">
+				<h3>FOLLOW US ON....</h3>
+				 <div class="social-icons">
+				 <a href="#"><span class="fb"> </span></a>
+				 <a href="#"><span class="twt"> </span></a>
+				 <a href="#"><span class="in"> </span></a>				 			 
+			    </div>
+		 </div>
+		 <div class="clearfix"></div>
+	 </div>
+</div>
+<!---fotter/-->
+<div class="copywrite">
+	 <div class="container">
+	 <p>Copyright &copy; 2015.Company name All rights reserved.More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p>
+</div>
+</div>
+<!---->
+<!---->
+<script type="text/javascript">
+		$(document).ready(function() {
+				/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+				*/
+		$().UItoTop({ easingType: 'easeOutQuart' });
+});
+</script>
+<a href="#to-top" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
+
+
+</body>
+</html>

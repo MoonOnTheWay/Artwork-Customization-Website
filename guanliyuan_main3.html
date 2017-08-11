@@ -1,0 +1,396 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>管理员主页_采编人员信息</title>
+	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<link href="css/style.css" rel='stylesheet' type='text/css' />
+	
+		
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Blogname Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+	Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" 
+	/>
+	<link rel="stylesheet" href="./kindeditor-4.1.10/themes/default/default.css" />
+	<link rel="stylesheet" href="./kindeditor-4.1.10/plugins/code/prettify.css" />
+	<script charset="utf-8" src="./kindeditor-4.1.10/kindeditor.js"></script>
+	<script charset="utf-8" src="./kindeditor-4.1.10/lang/zh_CN.js"></script>
+	<script charset="utf-8" src="./kindeditor-4.1.10/plugins/code/prettify.js"></script>
+	<script>
+		KindEditor.ready(function(K) {
+			var editor1 = K.create('textarea[name="content1"]', {
+				cssPath : './kindeditor-4.1.10/plugins/code/prettify.css',
+				uploadJson : './kindeditor-4.1.10/jsp/upload_json.jsp',
+				fileManagerJson : './kindeditor-4.1.10/jsp/file_manager_json.jsp',
+				allowFileManager : true,
+				afterCreate : function() {
+					var self = this;
+					K.ctrl(document, 13, function() {
+						self.sync();
+						document.forms['example'].submit();
+					});
+					K.ctrl(self.edit.doc, 13, function() {
+						self.sync();
+						document.forms['example'].submit();
+					});
+				}
+			});
+			prettyPrint();
+		});
+	</script>
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<!----webfonts---->
+		<link href='http://fonts.useso.com/css?family=Oswald:100,400,300,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.useso.com/css?family=Source+Sans+Pro:200,300,400,600,700,300italic,400italic,600italic' rel='stylesheet' type='text/css'>
+		<!----//webfonts---->
+		  <script src="http://ajax.useso.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<!--end slider -->
+				<!--script-->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<!--/script-->
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},900);
+				});
+			});
+</script>
+
+     
+<!---->
+</head>
+<body>
+<!---strat-banner---->
+
+<div class="banner2">				
+	 <div class="header">  
+		  <div class="container">
+			  <div class="logo" style="float:left">
+					<a href="home.html">后台管理系统</a>
+			 </div>
+
+			 <!---start-top-nav---->
+			     
+
+			 <div class="top-menu">
+				  <span class="menu"> </span> 
+				   <ul>
+						<li><a href="home.html">网站首页</a></li>
+						<li><a href="caibian.html">采编入口</a></li>
+						<li><a href="zhubian.html">主编入口</a></li>
+						<li><a style="color:white" href="guanliyuan.html">管理员入口</a></li>
+						
+
+						<div class="clearfix"> </div>
+
+				 </ul>
+			 </div>
+					<script>
+					$("span.menu").click(function(){
+					$(".top-menu ul").slideToggle("slow" , function(){
+					});
+					});
+					</script>
+				<!---//End-top-nav---->					
+		 </div>
+	 </div>
+	 <div class="container">
+		 <div class="banner-head">
+			 <h1>光影艺术品定制，艺术你的人生</h1>
+			 <h2>Make your life more artistic</h2>
+		 </div>	
+		 <div class="banner-links2" style="font-family: 造字工房雅圆（非商用）;">
+			 <ul>
+				 <li><a href="guanliyuan_main.html">用户信息</a></li>
+				 <li><a href="guanliyuan_main2.html">艺术家信息</a></li>
+				 <li class="active"><a href="guanliyuan_main3.html">采编人员信息</a></li>
+				 <li><a href="guanliyuan_main4.html">主编人员信息</a></li>
+				 <div class="clearfix"></div>
+			 </ul>
+		 </div>
+	 </div>
+</div>
+<!---//End-banner---->
+
+
+<div class="contact">
+	 <div class="container">
+		 <div class="contact-head">
+			  <form>
+			  	<h3>采编人员信息</h3>
+				  
+				  	<table id="table1">
+
+<tr>
+<th>用户名</th>
+<th>邮箱</th>
+<th>真实姓名</th>
+<th>电话</th>
+<th>生日</th>
+<th>性别</th>
+<th>地址</th>
+<th>管理操作</th>
+</tr>
+
+
+
+<tr>
+<td><a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img class="addnewuser" src="./images/addnewuser.png"></a></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>用户名</td>
+<td>*****</td>
+<td>*****</td>
+<td>用户名</td>
+<td>*****</td>
+<td>*****</td>
+<td>*****</td>
+<td><a href="#">重置密码</a><a>删除</a></td>
+</tr>
+
+<tr>
+<td>用户名</td>
+<td>*****</td>
+<td>*****</td>
+<td>用户名</td>
+<td>*****</td>
+<td>*****</td>
+<td>*****</td>
+<td><a>重置密码</a><a>删除</a></td>
+</tr>
+
+<tr>
+<td>用户名</td>
+<td>*****</td>
+<td>*****</td>
+<td>用户名</td>
+<td>*****</td>
+<td>*****</td>
+<td>*****</td>
+<td><a>重置密码</a><a>删除</a></td>
+</tr>
+
+<tr>
+<td>用户名</td>
+<td>*****</td>
+<td>*****</td>
+<td>用户名</td>
+<td>*****</td>
+<td>*****</td>
+<td>*****</td>
+<td><a>重置密码</a><a>删除</a></td>
+</tr>
+
+<tr>
+<td>用户名</td>
+<td>*****</td>
+<td>*****</td>
+<td>用户名</td>
+<td>*****</td>
+<td>*****</td>
+<td>*****</td>
+<td><a>重置密码</a><a>删除</a></td>
+</tr>
+
+<tr>
+<td>用户名</td>
+<td>*****</td>
+<td>*****</td>
+<td>用户名</td>
+<td>*****</td>
+<td>*****</td>
+<td>*****</td>
+<td><a>重置密码</a><a>删除</a></td>
+</tr>
+
+</table>
+			
+<!---pop-up-box---->
+					  <script type="text/javascript" src="./js/modernizr.custom.min.js"></script>    
+					<link href="./css/popuo-box.css" rel="stylesheet" type="text/css" media="all"/>
+					<script src="./js/jquery.magnific-popup.js" type="text/javascript"></script>
+					<!---//pop-up-box---->
+				<div id="small-dialog" class="mfp-hide">
+						<div class="login">
+							<h3>添加新用户</h3>
+							
+							<input name="" type="text" placeholder="用户名"/>
+							<input name="" type="password" placeholder="密码"/>
+							<input name="" type="text" placeholder="邮箱"/>
+							<input name="" type="text" placeholder="真实姓名"/>
+							<label><input type="radio" name="people"checked="checked" value="" />添加采编</label>&nbsp;&nbsp;
+							<label><input type="radio" name="people" value="" />添加主编</label> 
+
+							<br/>
+							<input type="submit" id="in" value="确定" />
+						</div>
+					</div>
+
+					<script>
+						$(document).ready(function() {
+						$('.popup-with-zoom-anim').magnificPopup({
+							type: 'inline',
+							fixedContentPos: false,
+							fixedBgPos: true,
+							overflowY: 'auto',
+							closeBtnInside: true,
+							preloader: false,
+							midClick: true,
+							removalDelay: 300,
+							mainClass: 'my-mfp-zoom-in'
+						});
+																						
+						});
+				</script>			
+
+   		 <div class="pages" style="background:#F0E68C" >
+					 <ul>
+						 <li class="active"><a href="#">1</a></li>
+						 <li><a href="#">2</a></li>
+						 <li><a href="#">3</a></li>
+						 <li><a href="#">4</a></li>
+						 <li><a href="#">5</a></li>
+						 <li><a href="#">6</a></li>
+						 <li><a href="#">Previous</a></li>
+						 <li><a href="#">Next</a></li>
+					 </ul>
+				 </div>						 
+					
+				
+
+				 <div class="contact-right" style="width:65%;float:right">
+				 		
+				 </div>
+				 <div class="clearfix"></div>
+			 </form>
+		 </div>
+
+		 <div class="address">
+			 <h3>Our Locations</h3>
+			 <div class="col-md-6 locations">				 
+				  <ul>
+					 <li><span></span></li>					 					
+					 <li>
+						 <div class="address-info">	
+							 <h4>New York, Washington</h4>
+							 <p>10-765 MD-Road</p>
+							 <p>Washington, DC, United States,</p>
+							 <p>Phone: 123 456 7890</p>
+							 <p>Mail: <a href="mailto:info@example.com">info(at)example.com</a></p>
+							 <h5><a href="">Visit on Google Maps >></a></h5>	
+						 </div>
+					 </li>				
+				  </ul>	
+				  <ul>
+					 <li><span></span></li>					 					
+					 <li>
+						 <div class="address-info">	
+							 <h4>London, UK</h4>
+							 <p>10-765 MD-Road</p>
+							 <p>Lorem ipsum, domon sit, UK,</p>
+							 <p>Phone: 123 456 7890</p>
+							 <p>Mail: <a href="mailto:info@example.com">info(at)example.com</a></p>
+							 <h5><a href="">Visit on Google Maps >></a></h5>	
+						 </div>
+					 </li>				
+				  </ul>		
+			 </div>
+			 <div class="col-md-6 locations">				 
+				  <ul>
+					 <li><span></span></li>					 					
+					 <li>
+						 <div class="address-info">	
+							 <h4>Brazil, SouthAmerica</h4>
+							 <p>10-765 MD-Road</p>
+							 <p>Argentina,Filps Road</p>
+							 <p>Phone: 123 456 7890</p>
+							 <p>Mail: <a href="mailto:info@example.com">info(at)example.com</a></p>
+							 <h5><a href="">Visit on Google Maps >></a></h5>	
+						 </div>
+					 </li>				
+				  </ul>	
+				  <ul>
+					 <li><span></span></li>					 					
+					 <li>
+						 <div class="address-info">	
+							 <h4>San Francisco, California</h4>
+							 <p>10-765 MD-Road</p>
+							 <p>Lorem ipsum, domon sit, California,</p>
+							<p>Phone: 123 456 7890</p>
+							 <p>Mail: <a href="mailto:info@example.com">info(at)example.com</a></p>
+							 <h5><a href="">Visit on Google Maps >></a></h5>	
+						 </div>
+					 </li>				
+				  </ul>		
+			 </div>
+			 <div class="clearfix"></div>
+		 </div>
+	 </div>
+</div>
+<!--fotter-->
+<div class="fotter2">
+	 <div class="container">
+		<div class="fotter-list" style="width:33%;float:left;padding:1em">
+			 <h3>后台入口</h3>
+			 <ul>
+			 <li><a href="caibian.html">采编人员入口</a></li>
+			 <li><a href="#">主编入口</a></li>
+			 <li><a href="#">管理员入口</a></li>
+			 </ul>
+		 </div>
+		 <div class="fotter-list" style="width:38%;float:left;padding:1em">
+			 <h3>VESTIBULUM COMMO</h3>
+			 <ul>
+			 <li><a href="#">Ut alliquam solicitudin</a></li>
+			 <li><a href="#">Neque id cursus faucibus</a></li>
+			 <li><a href="#">Raesent dapibus neque id cursus</a></li>
+			 </ul>
+		 </div>
+		 <div class="fotter-media" style="width:29%;float:left;padding:1em">
+				<h3>FOLLOW US ON....</h3>
+				 <div class="social-icons">
+				 <a href="#"><span class="fb"> </span></a>
+				 <a href="#"><span class="twt"> </span></a>
+				 <a href="#"><span class="in"> </span></a>				 			 
+			    </div>
+		 </div>
+		 <div class="clearfix"></div>
+	 </div>
+</div>
+<!---fotter/-->
+<div class="copywrite">
+	 <div class="container">
+	 <p>Copyright &copy; 2015.Company name All rights reserved.More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p>
+</div>
+</div>
+<!---->
+<!---->
+<script type="text/javascript">
+		$(document).ready(function() {
+				/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+				*/
+		$().UItoTop({ easingType: 'easeOutQuart' });
+});
+</script>
+<a href="#to-top" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
+
+
+</body>
+</html>
