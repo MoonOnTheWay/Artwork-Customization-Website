@@ -10,7 +10,21 @@
 
 ![image text](https://github.com/MoonOnTheWay/Artwork-Customization-Website/blob/master/screenshots/Home3.png)
 
+![image text](https://github.com/MoonOnTheWay/Artwork-Customization-Website/blob/master/screenshots/a.png)
+
+![image text](https://github.com/MoonOnTheWay/Artwork-Customization-Website/blob/master/screenshots/b.png)
+
+![image text](https://github.com/MoonOnTheWay/Artwork-Customization-Website/blob/master/screenshots/c.png)
+
 ![image text](https://github.com/MoonOnTheWay/Artwork-Customization-Website/blob/master/screenshots/Artist_Home.png)
+
+![image text](https://github.com/MoonOnTheWay/Artwork-Customization-Website/blob/master/screenshots/d.png)
+
+![image text](https://github.com/MoonOnTheWay/Artwork-Customization-Website/blob/master/screenshots/e.png)
+
+![image text](https://github.com/MoonOnTheWay/Artwork-Customization-Website/blob/master/screenshots/h.png)
+
+![image text](https://github.com/MoonOnTheWay/Artwork-Customization-Website/blob/master/screenshots/i.png)
 
 ![image text](https://github.com/MoonOnTheWay/Artwork-Customization-Website/blob/master/screenshots/Editor_Login.png)
 
@@ -19,3 +33,5 @@
 ![image text](https://github.com/MoonOnTheWay/Artwork-Customization-Website/blob/master/screenshots/Editor_Edit2.png)
 
 ![image text](https://github.com/MoonOnTheWay/Artwork-Customization-Website/blob/master/screenshots/Editor_Edit3.png)
+
+
