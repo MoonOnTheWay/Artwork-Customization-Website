@@ -2,10 +2,11 @@
 ### Project Manager and Front End Developer (10/2015 - 12/2015)
 * Gathered requirements, outlined schedules, conceptualized interaction 
 ow and UI design
-* Designed and developed a responsive layout website using Bootstrap, Jquery, HTML/CSS, and JS
-* Developed code for Shadowboxes, Slider Carousels, Rotating Headers, Validation and JS animations
-* Provided advertorial management, user(administrator, customer, artist) management, artwork exhibition, transac-
-tion and customization services
+* Designed and developed a responsive layout website that could be viewed on both the desktop and the mobile phone
+for online shopping, customization, advertorial and user management
+* Implemented reusable user interface components including shopping lists, slider carousels, rotating headers, validation
+and JS animations, optimized for mobile clients using AngularJS, jQuery and Bootstrap
+* Helped with front-end and back-end communication using JavaScript
 
 ### Website Screenshots
 ![image text](https://github.com/MoonOnTheWay/Artwork-Customization-Website/blob/master/screenshots/Home.png)
