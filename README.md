@@ -1,7 +1,6 @@
 # Artwork Customization Website Development 
 ### Project Manager and Front End Developer (10/2015 - 12/2015)
-* Gathered requirements, outlined schedules, conceptualized interaction 
-ow and UI design
+* Gathered requirements, outlined schedules, conceptualized interaction flow and UI design
 * Designed and developed a responsive layout website that could be viewed on both the desktop and the mobile phone
 for online shopping, customization, advertorial and user management
 * Implemented reusable user interface components including shopping lists, slider carousels, rotating headers, validation
